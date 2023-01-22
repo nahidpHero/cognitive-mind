@@ -23,42 +23,29 @@ const Dataset = () => {
         },
       ];
     return (
-        <div id="projects" className="py-16 ml-7 mr-7 mx-auto  lg:py-20 ">
-        <h1 className="my-10 text-5xl text-center text-white text-blod">Dataset</h1>
-        <div className="grid grid-cols-1 lg:ml-44 justify-center text-center gap-10 card md:grid-cols-2  lg:grid-cols-3">
-          {projects.map((project) => (
-            <a
-              href={project.url}
-              key={project.title}
-              className="overflow-hidden text-white transition duration-100 rounded shadow-sm hover:-translate-y-2"
-            >
-              <div className="overflow-y-auto">
-                <img
-                  src={project.image}
-                  className="object-cover w-full"
-                  alt=""
-                />
-              </div>
-              <div className="p-5 border bg-slate-200 opacity-70 ">
-               
-                <a
-                  href="/"
-                  aria-label="Category"
-                  title="Visit the East"
-                  className="inline-block mb-3  font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
-                >
-                  {project.title}
-                </a>
-               
-               
-              </div>
-            </a>
-          ))}
-        </div>
-        <div className=" text-end  mt-10 mr-20">
-            <button className='btn btn-primary'>See More</button>
-        </div>
-      </div>
+      <div className=' lg:mt-24 '>
+      <p className='text-5xl text-bold mb-10 text-center'>Datasets</p>
+    <div className="card w-96 grid lg:grid-cols-3 md:grid-cols-2  lg:gap-10 mx-auto justify-center  bg-base-100 shadow-xl">
+    {
+      projects.map((project=>(
+        <a 
+        href={project.url}
+        className="overflow-hidden transition duration-100 rounded  hover:-translate-y-2"
+        >
+          <figure><img className='overflow-y' src={project.image} alt="img" /></figure>
+      <div className="card-body overflow-y-auto">
+      <h2 className="card-title">
+      {
+        project.title
+      }
+    </h2>
+    
+  </div>
+        </a>
+      )))
+    }
+  </div>
+  </div> 
     );
 };
 

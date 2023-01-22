@@ -5,12 +5,12 @@ import './About.css'
 const About = () => {
     return (
         <div className='lg:flex justify-center text-center mt-12'>
-        <div className=' lg:border-2' >
+        <div className='border-style' >
         <img className='image-style' src={img} alt="" />
         </div >
-        <div className='lg:w-1/2 lg:border-2 lg:p-3'>
-           <h1 className='lg:text-3xl lg:font-bold text-center '>About Us</h1>
-           <p className='text-style mt-5 '> Welcome to Cognitive Mind. We conduct cutting-edge research in artificial intelligence, machine learning, deep learning and data mining as well as applications in computer vision, natural language processing, signal processing, bioinformatics, cyber security, and related areas. We also work to produce real-life applications from the research funding. We care and take data extremely. As everyone in AI research agnostics about how the state-of-the-art in AI will change over the forward days, We are ardently committed to ensuring that general-purpose AI enriches all of humanity. Cognitive Mind Lab is passionate about learning AI for the new generation so pupils are cordially welcome to join us.
+        <div className='lg:w-1/2  lg:p-3 border-style'>
+           <h1 className='text-3xl font-bold text-center text-black'>About Us</h1>
+           <p className='text-2xl mt-5 text-black'> Welcome to Cognitive Mind. We conduct cutting-edge research in artificial intelligence, machine learning, deep learning and data mining as well as applications in computer vision, natural language processing, signal processing, bioinformatics, cyber security, and related areas. We also work to produce real-life applications from the research funding. We care and take data extremely. As everyone in AI research agnostics about how the state-of-the-art in AI will change over the forward days, We are ardently committed to ensuring that general-purpose AI enriches all of humanity. Cognitive Mind Lab is passionate about learning AI for the new generation so pupils are cordially welcome to join us.
 </p>
 <div className="card-actions justify-end mr-5">
 <div className="flex gap-5 ">

@@ -5,20 +5,25 @@ import img3 from '../../assets/blog-3.PNG'
 
 const Blog = () => {
     return (
-        <div className='grid grid-cols-3 ml-20 mb-20'>
-            <div className='text-xl text-white shadow-xl'>
-          <a href="#">  <img className='w-80' src={img1} alt="" /></a>
-          <p>Google Ai, THE FUTURE</p>
+        <div className=''>
+                <div className='text-center text-5xl font-bold mt-10 mb-10'>
+                    <h1>Blogs</h1>
+                </div>
+            <div className='grid lg:grid-cols-3  lg:ml-48 mx-auto justify-center'>
+            <div className='text-xl font-bold w-80 mb-10'>
+          <a href="#">  <img className='' src={img1} alt="" /></a>
+          <p className=''>Google Ai, THE FUTURE</p>
             </div>
-            <div className='text-xl text-white shadow-xl'>
-            <img className='w-80' src={img2} alt="" />
+            <div className='text-xl font-bold w-80 mb-10'>
+           <a href=""> <img className='' src={img2} alt="" /></a>
             <p>Go through to Cognitive AI</p>
             </div>
-            <div className='text-xl text-white shadow-xl'>
-            <img className='w-80' src={img3} alt="" />
+            <div className='text-xl font-bold w-80 mb-10'>
+            <a href=""><img className='' src={img3} alt="" /></a>
             <p>AI- Interview Question</p>
             </div>
             
+        </div>
         </div>
     );
 };

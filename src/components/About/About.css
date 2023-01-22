@@ -1,15 +1,29 @@
-.image-style{
-    width: 320px;
- 
-    
+
+
+@media only screen and (min-width: 992px) {
+    .image-style{
+        width: 320px;
+     
+        
+    }
+
 }
+
 
 .text-style{
     font-size: 19px;
+    
     
 }
 
 .card{
    
     width: 950px;
+}
+
+.border-style{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
 }
